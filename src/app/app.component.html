@@ -1,0 +1,19 @@
+<h1>Events</h1>
+<button (click)="getdata('hello')">Call function</button>
+<br/> <br/>
+<input type ="text" #box (keyup)="getdata(box.value)" placeholder="event keyup" />
+<br/> <br/>
+<input type ="text" #box1 (keydown)="getdata(box1.value)" placeholder="event keydown" />
+<br/> <br/>
+<input type ="text" #box2 (blur)="getdata(box2.value)" placeholder="event blur" />
+<h2 (mouseover)="getdata('over')"> mouse-over </h2>
+<h2 (mouseleave)="getdata('leave')"> mouse-leave </h2>
+<h1>Get input box value</h1>
+<input type="text" #box0 (keyup)="getvalue(box0.value)"placeholder="enter name" neme="name" />
+<button (click)="getvalue(box0.value)" >  click </button>
+<p>
+  box value is: {{displayval}}
+</p>
+<button (click)= "Counter('minus')" >--</button>
+<p> Count : {{count}} </p>
+<button (click)= "Counter('add')">++</button>
